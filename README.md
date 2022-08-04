@@ -1,5 +1,5 @@
 # SGLL - Simple GL Library
-<image src="git-assets/sgll_logo.png" alt="logo" width=515px></image>
+<image src="git-assets/sgll_logo.png" alt="logo" width=460px></image>
 
 ## Overview
 SGLL is a simple abstraction over boilerplate code that is used by any general [OpenGL](https://de.wikipedia.org/wiki/OpenGL) program. The API contains 
