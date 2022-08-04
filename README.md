@@ -28,6 +28,7 @@ That's it!
 - OpenGL Texture Class
 - File Utility Methods
 - Logging at different Log Levels
+- Easy Delta Time Access
 
 ## Notes
 
