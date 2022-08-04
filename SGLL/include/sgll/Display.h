@@ -4,6 +4,8 @@
 
 #include <GLFW/glfw3.h>
 
+struct GLBitmask;
+
 namespace SGLL
 {
 	class Display
@@ -62,11 +64,8 @@ namespace SGLL
 		{
 			glfwSwapInterval(vsync);
 		}
-		
-		void pollEvents()
-		{
-			glfwPollEvents();
-		}
+
+		void pollEvents(bool updateDelta = true);
 		
 	private:
 

@@ -3,6 +3,7 @@
 #include "Asserts.h"
 #include "Keyboard.h"
 #include "Mouse.h"
+#include "DeltaTime.h"
 
 #include <glad/glad.h>
 
@@ -37,9 +38,6 @@ namespace SGLL
 
 		SGLL_ASSERT_MSG(glfwInit(), "Failed to intialize GLFW.");
 
-		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
-		glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 		glfwWindowHint(GLFW_RESIZABLE, rezisable);
 
 		mGLFWWindow = glfwCreateWindow(width, height, title.c_str(), startFullScreen ? glfwGetPrimaryMonitor() : nullptr, nullptr);
@@ -67,6 +65,15 @@ namespace SGLL
 	void Display::shutdownGLFW()
 	{
 		glfwTerminate();
+	}
+
+	void Display::pollEvents(bool updateDelta)
+	{
+		glfwPollEvents();
+		if (updateDelta)
+		{
+			DeltaTime::update();
+		}
 	}
 
 	void Display::resizeCallback(GLFWwindow* window, int width, int height)
