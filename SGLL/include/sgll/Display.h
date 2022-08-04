@@ -25,14 +25,14 @@ namespace SGLL
 
 		void destory();
 
-		unsigned int getWidth() const
+		static unsigned int getWidth() 
 		{
-			return mWidth;
+			return sWidth;
 		}
 
-		unsigned int getHeight() const
+		static unsigned int getHeight() 
 		{
-			return mHeight;
+			return sHeight;
 		}
 
 		const std::string& getTitle() const
@@ -69,7 +69,7 @@ namespace SGLL
 		
 	private:
 
-		static unsigned int mWidth, mHeight;
+		static unsigned int sWidth, sHeight;
 
 		std::string mTitle;
 

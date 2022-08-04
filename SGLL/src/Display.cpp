@@ -7,8 +7,8 @@
 
 #include <glad/glad.h>
 
-unsigned int SGLL::Display::mWidth;
-unsigned int SGLL::Display::mHeight;
+unsigned int SGLL::Display::sWidth;
+unsigned int SGLL::Display::sHeight;
 
 namespace SGLL
 {
@@ -31,8 +31,8 @@ namespace SGLL
 	void Display::init(unsigned int width, unsigned int height, const std::string& title, bool rezisable, bool startFullScreen, bool vsync)
 	{
 		mTitle = title;
-		mWidth = width;
-		mHeight = height;
+		sWidth = width;
+		sHeight = height;
 
 		Log::Init(title == "" ? "SGLL CLIENT" : title);
 
@@ -80,8 +80,8 @@ namespace SGLL
 	{
 		glViewport(0, 0, width, height);
 
-		mWidth = width;
-		mHeight = height;
+		sWidth = width;
+		sHeight = height;
 	}
 
 }
