@@ -62,7 +62,11 @@ namespace SGLL
 		{
 			glfwSwapInterval(vsync);
 		}
-
+		
+		void pollEvents()
+		{
+			glfwPollEvents();
+		}
 		
 	private:
 
