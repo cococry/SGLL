@@ -7,7 +7,7 @@
 
 namespace SGLL
 {
-	Texture::Texture(const std::string& filepath, bool flipped)
+	Texture::Texture(const std::string& filepath, bool flipped, GLenum minFilter, GLenum magFilter)
 	{
 		init(filepath, flipped);
 	}
@@ -15,17 +15,17 @@ namespace SGLL
 	{
 		glDeleteTextures(1, &mID);
 	}
-	void Texture::init(const std::string& filepath, bool flipped)
+	void Texture::init(const std::string& filepath, bool flipped, GLenum minFilter, GLenum magFilter)
 	{
 
-		glCreateTextures(GL_TEXTURE_2D, 1, &mID);
+		glGenTextures(GL_TEXTURE_2D, &mID);
 		glBindTexture(GL_TEXTURE_2D, mID);
 
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, magFilter);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, minFilter);
 
 		stbi_set_flip_vertically_on_load(flipped);
 

@@ -2,6 +2,8 @@
 
 #include <string>
 
+#include <glad/glad.h>
+
 namespace SGLL
 {
 	class Texture
@@ -9,11 +11,11 @@ namespace SGLL
 	public:
 		Texture() = default;
 
-		Texture(const std::string& filepath, bool flipped = true);
+		Texture(const std::string& filepath, bool flipped = true, GLenum minFilter = GL_NEAREST, GLenum magFilter = GL_NEAREST);
 
 		~Texture();
 
-		void init(const std::string& filepath, bool flipped = true);
+		void init(const std::string& filepath, bool flipped = true, GLenum minFilter = GL_NEAREST, GLenum magFilter = GL_NEAREST);
 
 		void bind();
 
