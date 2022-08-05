@@ -18,7 +18,7 @@ namespace SGLL
 	void Texture::init(const std::string& filepath, bool flipped, GLenum minFilter, GLenum magFilter)
 	{
 
-		glGenTextures(GL_TEXTURE_2D, &mID);
+		glGenTextures(1, &mID);
 		glBindTexture(GL_TEXTURE_2D, mID);
 
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
