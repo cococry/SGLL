@@ -76,6 +76,11 @@ namespace SGLL
 		}
 	}
 
+	void Display::setInputMode(int mode, int value)
+	{
+		glfwSetInputMode(mGLFWWindow, mode, value);
+	}
+
 	void Display::resizeCallback(GLFWwindow* window, int width, int height)
 	{
 		glViewport(0, 0, width, height);

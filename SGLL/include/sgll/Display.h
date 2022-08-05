@@ -66,6 +66,8 @@ namespace SGLL
 		}
 
 		void pollEvents(bool updateDelta = true);
+
+		void setInputMode(int mode, int value);
 		
 	private:
 
