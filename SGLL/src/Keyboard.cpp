@@ -1,4 +1,4 @@
-#include "Keyboard.h"
+#include "Input/Keyboard.h"
 
 bool SGLL::Keyboard::sKeys[GLFW_KEY_LAST];
 bool SGLL::Keyboard::sKeysChanged[GLFW_KEY_LAST];

@@ -4,8 +4,6 @@
 
 #include <GLFW/glfw3.h>
 
-struct GLBitmask;
-
 namespace SGLL
 {
 	class Display

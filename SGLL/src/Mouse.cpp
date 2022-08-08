@@ -1,4 +1,4 @@
-#include "Mouse.h"
+#include "Input/Mouse.h"
 
 
 bool SGLL::Mouse::sButtons[GLFW_MOUSE_BUTTON_LAST] = { 0 };
