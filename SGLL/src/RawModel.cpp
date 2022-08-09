@@ -1,4 +1,4 @@
-#include "Graphics/RawModel.h"
+#include "sgll/Graphics/RawModel.h"
 
 namespace SGLL
 {

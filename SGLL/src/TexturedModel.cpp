@@ -1,4 +1,4 @@
-#include "Graphics/TexturedModel.h"
+#include "sgll/Graphics/TexturedModel.h"
 
 namespace SGLL
 {

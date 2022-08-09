@@ -1,7 +1,6 @@
-#include "Graphics/Primitves/RenderablePrimitiv.h"
-
-#include "DeltaTime.h"
-#include "Graphics/ModelLoader.h"
+#include "sgll/Graphics/Primitves/RenderablePrimitiv.h"
+#include "sgll/DeltaTime.h"
+#include "sgll/Graphics/ModelLoader.h"
 
 namespace SGLL
 {

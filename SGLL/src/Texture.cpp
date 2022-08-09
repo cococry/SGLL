@@ -1,9 +1,9 @@
-#include "Graphics/Texture.h"
+#include "sgll/Graphics/Texture.h"
 
 #include <glad/glad.h>
 #include <stb_image/stb_image.h>
 
-#include "Logging.h"
+#include "sgll/Logging.h"
 
 namespace SGLL
 {

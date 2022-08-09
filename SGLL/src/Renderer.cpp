@@ -1,13 +1,14 @@
-#include "Graphics/Renderer.h"
-
-#include "Graphics/StaticShader.h"
-#include "Graphics/Projection.h"
+#include "sgll/Graphics/Renderer.h"
+#include "sgll/Graphics/StaticShader.h"
+#include "sgll/Graphics/Projection.h"
 
 namespace SGLL
 {
-	void Renderer::init()
+	void Renderer::init(const std::string& colorVertexShaderPath, const std::string& colorFragmentShaderPath,
+		const std::string& textureVertexShaderPath, const std::string& textureFragmentPath)
 	{
-		StaticShader::init();
+		StaticShader::init(colorVertexShaderPath, colorFragmentShaderPath, textureVertexShaderPath, textureFragmentPath);
+
 		StaticShader::getColorShader().use();
 		SGLL::Projection::init(0.1f, 1000.0f);
 		SGLL::Projection::setMatrix();

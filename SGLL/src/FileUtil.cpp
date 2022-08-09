@@ -1,9 +1,9 @@
-#include "FileUtil.h"
+#include "sgll/FileUtil.h"
 
 #include <sstream>
 #include <fstream>
 
-#include "Logging.h"
+#include "sgll/Logging.h"
 
 namespace SGLL
 {

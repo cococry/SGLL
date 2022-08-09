@@ -1,10 +1,9 @@
-#include "Graphics/Projection.h"
+#include "sglL/Graphics/Projection.h"
 
 #include <glm/gtc/matrix_transform.hpp>
 
-#include "Display.h"
-
-#include "Logging.h"
+#include "sgll/Display.h"
+#include "sgll/Logging.h"
 
 float SGLL::Projection::sFarPlane;
 float SGLL::Projection::sNearPlane;

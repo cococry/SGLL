@@ -1,10 +1,10 @@
-#include "Graphics/Primitves/TexturedQuad.h"
-#include "Graphics/StaticShader.h"
+#include "sgll/Graphics/Primitves/TexturedQuad.h"
+#include "sgll/Graphics/StaticShader.h"
 
 #include <glm/gtc/matrix_transform.hpp>
 
-#include "DeltaTime.h"
-#include "Graphics/ModelLoader.h"
+#include "sgll/DeltaTime.h"
+#include "sgll/Graphics/ModelLoader.h"
 
 namespace SGLL
 {

@@ -1,10 +1,9 @@
-#include "Graphics/Shader.h"
-
-#include "FileUtil.h"
+#include "sgll/Graphics/Shader.h"
+#include "sgll/FileUtil.h"
 
 #include <glm/gtc/type_ptr.hpp>
 
-#include "Logging.h"
+#include "sgll/Logging.h"
 
 namespace SGLL
 {

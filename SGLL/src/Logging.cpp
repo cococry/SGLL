@@ -1,4 +1,4 @@
-#include "Logging.h"
+#include "sgll/Logging.h"
 
 std::shared_ptr<spdlog::logger> SGLL::Log::sClientLogger;
 std::shared_ptr<spdlog::logger> SGLL::Log::sInternalLogger;

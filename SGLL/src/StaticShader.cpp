@@ -1,4 +1,4 @@
-#include "Graphics/StaticShader.h"
+#include "sgll/Graphics/StaticShader.h"
 
 
 SGLL::Shader SGLL::StaticShader::sColorShader;

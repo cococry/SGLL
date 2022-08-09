@@ -1,10 +1,10 @@
 #include "Display.h"
 
-#include "Asserts.h"
-#include "Input/Keyboard.h"
-#include "Input/Mouse.h"
-#include "DeltaTime.h"
-#include "Graphics/Projection.h"
+#include "sgll/Asserts.h"
+#include "sgll/Input/Keyboard.h"
+#include "sgll/Input/Mouse.h"
+#include "sgll/DeltaTime.h"
+#include "sgll/Graphics/Projection.h"
 
 #include <glad/glad.h>
 
